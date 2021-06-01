@@ -12,8 +12,6 @@ Only Docker to Build image and run application:
 
 ## Getting started
 
-First, create empty folder name mysql ./smarttbot-crypto-main/
-
 To run the application, in the directory where the docker-compose.yml file is located, open the terminal and type the commands:
 
 ```
