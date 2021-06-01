@@ -1,0 +1,36 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:5.7.34
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "smarttbot_crypto"
+    command: --init-file /data/application/init.sql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./init.sql:/data/application/init.sql
+    networks:
+      - mysql-compose-network
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+    networks:
+      - mysql-compose-network
+
+  app:
+    build: ./
+    depends_on:
+      - db
+    networks:
+      - mysql-compose-network
+    ports:
+      - "5000:5000"
+
+networks: 
+  mysql-compose-network:
+    driver: bridge
