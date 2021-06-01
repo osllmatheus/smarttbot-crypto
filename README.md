@@ -36,9 +36,9 @@ Open your browser and access the address:
 To access graph you need to access the cryptoname in top menu
 
 
-![Home](linkfoto)
+![Home](https://github.com/osllmatheus/smarttbot-crypto/blob/main/images/home.jpeg)
 
 
 After select crypto, you can choose the time frames.
 
-![Graph](linkfoto)
+![Graph](https://github.com/osllmatheus/smarttbot-crypto/blob/main/images/graph.jpeg)
