@@ -7,8 +7,6 @@ from init_db import mydb
 
 app = Flask(__name__,template_folder='templates')
 
-print(mydb)
-
 def get_data(name,period):
 
     sql = "SELECT * FROM crypto WHERE name = %s AND period = %s"
