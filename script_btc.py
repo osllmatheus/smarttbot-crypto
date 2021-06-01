@@ -6,7 +6,6 @@ from init_db import mydb
 
 url_api = "https://poloniex.com/public?command=returnTicker"
 crypto_name = 'USDC_BTC'
-print(mydb)
 
 data = {
     1: {},
