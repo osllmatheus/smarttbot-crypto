@@ -19,7 +19,7 @@ docker-compose up --build
 ```
 
 
-If failed, please run again
+If python dont find db, please run again
 
 After the RUN command, the server will be running on the local machine on port 5000 and MySQL Adminer on port 8080.
 
